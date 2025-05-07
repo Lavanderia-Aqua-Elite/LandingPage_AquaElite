@@ -14,4 +14,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 # Página web: Lavanderia AquaElite
 
-Esta página fue creada como presentación para la empresa AquaElita para darse a conocer al público y ofrecer sus servicios a futuros clientes, aparte de que el usuario podra saber con un mapa donde se ubica la empresa y una sección de reseña de usuarios sobre el servicio.
+Esta página fue creada como presentación para la empresa AquaElita para darse a conocer al público y ofrecer sus servicios a futuros clientes, aparte de que el usuario podra saber con un mapa donde se ubica la empresa y una sección de reseña de usuarios sobre el servicio. El cliente se podra logear para comentar una reseña sobre el servicio que ofrecemos.
+
+![Logo de mi proyecto](/src/assets/image/home.webp)
