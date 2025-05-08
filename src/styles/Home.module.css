@@ -2,3 +2,6 @@
 @import url(../index.module.css);
 
 /* Modulo css de Home */
+.conteinerHome {
+    background: var(--bg-home);
+}
