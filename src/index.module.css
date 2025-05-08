@@ -1,7 +1,4 @@
 :root {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 
   /* Fondos */
   --bg-home: linear-gradient(90deg, #5de0e6, #004aad);
@@ -31,6 +28,12 @@
 
   /* Tamaño de letra */
 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 

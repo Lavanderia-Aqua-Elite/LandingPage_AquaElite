@@ -1,0 +1,11 @@
+/* Importar modulo css global */
+@import url(../index.module.css);
+
+/* Modulo css del header */
+.header {
+    background: var(--bg-navbar);
+    width: 100%;
+    height: 10dvh;
+    display: inline-flex;
+    position: fixed;
+}
