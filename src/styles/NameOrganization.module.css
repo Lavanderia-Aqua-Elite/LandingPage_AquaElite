@@ -1,0 +1,10 @@
+/* Importar modulo css global */
+@import url(../index.module.css);
+
+/* Modulo css del nombre de la empresa */
+.blackText {
+    margin-left: 2rem;
+    font-family: var(--font-nameLogo);
+    color: var(--color-nameLogo);
+    font-size: var(--fontsize-nameLogo);
+}
