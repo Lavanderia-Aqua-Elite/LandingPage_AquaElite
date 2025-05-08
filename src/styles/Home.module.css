@@ -2,7 +2,6 @@
 @import url(../index.module.css);
 
 /* Modulo css de Home */
-
-.home_page {
-    background: black;
+body {
+    background: var(--bg-home);
 }
