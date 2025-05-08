@@ -5,5 +5,5 @@ import App from './App.jsx'; // Importa el componente App
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-  </StrictMode>,
-)
+  </StrictMode>
+);

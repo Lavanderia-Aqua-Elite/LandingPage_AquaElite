@@ -1,8 +1,8 @@
-/* Importar modulos css */
+/* Importar modulo css global */
 @import url(../index.module.css);
 
 /* Modulo css de Home */
 
 .home_page {
-    background: var(--bg-main);
+    background: black;
 }
