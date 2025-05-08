@@ -6,7 +6,10 @@ export default function Header() {
     return (
         <>
 
-        
+            {/* Encabezado */}
+            <header className="header">
+                <strong className="blackText_header">AquaElite</strong>
+            </header>
 
         </>
     )
