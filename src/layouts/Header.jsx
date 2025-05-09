@@ -2,6 +2,7 @@
 import React from "react";
 import classes from '../styles/Header.module.css';
 import NameOrganization from "../components/NameOrganization";
+import ToggleBtn from "../components/ToggleBtn";
 
 // Exporta por defecto y crea el componente
 export default function Header() {
@@ -11,6 +12,7 @@ export default function Header() {
             {/* Encabezado */}
             <header className={classes.header}>
                 <NameOrganization />
+                <ToggleBtn />
             </header>
 
         </>

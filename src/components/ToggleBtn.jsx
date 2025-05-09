@@ -11,7 +11,11 @@ export default function ToggleBtn( {isExpanded, onToggle} ) {
                 className={`toggle-btn ${isExpanded ? "expanded" : ""}`}
                 aria-label={isExpanded ? "Cerrar menú" : "Abrir menú"}
             >
-
+            {isExpanded ? (
+                <span className="iconBtn">✕</span>
+            ) : (
+                <span className="iconBtn">☰</span> 
+            )}
             </button>
         </>
     );
