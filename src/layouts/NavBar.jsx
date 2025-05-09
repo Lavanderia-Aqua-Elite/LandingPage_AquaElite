@@ -5,16 +5,16 @@ import NameOrganization from "../components/NameOrganization";
 import ToggleBtn from "../components/ToggleBtn";
 
 // Exporta por defecto y crea el componente
-export default function Header() {
+export default function NavBar() {
     return (
         <>
 
             {/* Encabezado */}
-            <header className={classes.header}>
+            <nav className={classes.header}>
                 <NameOrganization />
                 {/* Botón expansivo */}
                 <ToggleBtn />
-            </header>
+            </nav>
 
         </>
     )
