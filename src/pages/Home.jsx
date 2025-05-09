@@ -1,7 +1,8 @@
 // Importa los modulos necesarios
 import React from 'react';
 import classes from '../styles/Home.module.css';
-import Header from '../layouts/Header';
+import NavBar from '../layouts/NavBar';
+
 
 
 // Exporta por defecto el componente y lo crea
@@ -11,7 +12,7 @@ export default function Home() {
             {/* Contenedor */}
             <div className={classes.conteinerHome}>
                 <main>
-                    <Header/>
+                    <NavBar />
                 </main>
             </div>
         </>
