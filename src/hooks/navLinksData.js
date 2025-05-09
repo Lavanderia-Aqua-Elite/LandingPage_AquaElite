@@ -1,9 +1,8 @@
 // Importa los modulos necesarios
-import { useCallback } from "react";
 import { FaMapMarkerAlt, FaUsers, FaTools, FaEnvelope } from 'react-icons/fa';
 
 // Array para el contener la lista de enlazes
-const initialLinks = [
+export const initialLinks = [
     {
         id: crypto.randomUUID(),
         path: '#ubicacion',
