@@ -1,7 +1,7 @@
 /* Importar modulo css global */
 @import url(../index.module.css);
 
-/* Modulo css del header */
+/* Modulo css del nav */
 .navbar {
     background: var(--bg-navbar);
     width: 100%;

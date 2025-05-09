@@ -13,14 +13,14 @@
   /* Colores */
   --color-maintitle: #ffffff;
   --color-text: #ffffff;
-  --color-link: #ffffff;
-  --color-iconLink: #ffffff;
+  --color-iconTextLink: #ffffff;
+  --color-iconTextLink-Hover: #12097b;
   --color-textCustomerName: #5e17eb;
   --color-textCustomer: #d9472c;
   --color-textUserMsj: #111111;
   --color-nameLogo: #ffffff;
   --color-btnToggle: #ffffff;
-  --color-btnToogleHover: #cccccc;
+  --color-btnToogleHover: #12097b;
 
   /* Tipografias */
   --font-title: 'Playfair Display', serif;
@@ -31,6 +31,7 @@
 
   /* Tamaño de letra */
   --fontsize-btnToggle: 1.5rem;
+  --fontsize-navLinks: 1.5rem;
   --fontsize-nameLogo: 2rem;
 
 }

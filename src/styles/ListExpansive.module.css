@@ -1,0 +1,33 @@
+/* Importar modulo css global */
+@import url(../index.module.css);
+
+/* Modulo css del listnav */
+.navList {
+    display: inline-flex;
+    margin-left: auto;       /* Empuja el contenedor a la derecha */
+    padding-right: 3rem;
+    gap: 1rem;
+    list-style: none;
+    align-items: center;
+}
+
+.navItem {
+    display: inline-flex;    /* Mantiene inline-flex para los items */
+    align-items: center;
+}
+
+.navLink {
+    font-size: var(--fontsize-navLinks);
+    color: var(--color-iconTextLink);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    text-decoration: none;   /* Elimina el subrayado */
+    transition: color 0.2s;  /* Transición suave para hover (opcional) */
+}
+
+/* Efecto hover (opcional) */
+.navLink:hover {
+    color: var(--color-iconTextLink-Hover);
+}

@@ -1,15 +1,17 @@
-// src/components/ListExpansive.jsx
+// Importa los modulos necesarios
 import React from 'react';
-import { navList } from '../hooks/navList'; // Importa desde el .js
+import { navList } from '../hooks/navList'; 
+import classes from '../styles/ListExpansive.module.css'
 
+// Exporta por defecto y crea el componente
 export default function ListExpansive() {
     return (
-        <ul className="navList">
+        <ul className={classes.navList}>
             {navList.map((item) => (
-                <li key={item.id} className="navItem">
+                <li key={item.id} className={classes.navItem}>
                     <a 
                         href={item.targetId} 
-                        className="navLink">
+                        className={classes.navLink}>
                             {item.icon} {/* ¡Funciona! */}
                             {item.list}
                         </a>
