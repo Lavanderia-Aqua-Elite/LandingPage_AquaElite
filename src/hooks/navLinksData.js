@@ -7,28 +7,28 @@ export const initialLinks = [
         id: crypto.randomUUID(),
         path: '#ubicacion',
         text: 'Ubícanos',
-        icon: <FaMapMarkerAlt size={16} />,
+        icon: <FaMapMarkerAlt />,
         visible: true
     },
     {
         id: crypto.randomUUID(),
         path: '#nosotros',
         text: 'Sobre Nosotros',
-        icon: <FaUsers size={16} />,
+        icon: <FaUsers />,
         visible: true
     },
     {
         id: crypto.randomUUID(),
         path: '#servicios',
         text: 'Servicios',
-        icon: <FaTools size={16} />,
+        icon: <FaTools />,
         visible: true
     },
     {
         id: crypto.randomUUID(),
         path: '#contacto',
         text: 'Contáctanos',
-        icon: <FaEnvelope size={16} />,
+        icon: <FaEnvelope />,
         visible: true
     }
 ]
