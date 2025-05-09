@@ -2,33 +2,24 @@
 import { FaMapMarkerAlt, FaUsers, FaTools, FaEnvelope } from 'react-icons/fa';
 
 // Array para el contener la lista de enlazes
-export const initialLinks = [
-    {
-        id: crypto.randomUUID(),
-        path: '#ubicacion',
-        text: 'Ubícanos',
-        icon: <FaMapMarkerAlt />,
-        visible: true
-    },
-    {
-        id: crypto.randomUUID(),
-        path: '#nosotros',
-        text: 'Sobre Nosotros',
-        icon: <FaUsers />,
-        visible: true
-    },
-    {
-        id: crypto.randomUUID(),
-        path: '#servicios',
-        text: 'Servicios',
-        icon: <FaTools />,
-        visible: true
-    },
-    {
-        id: crypto.randomUUID(),
-        path: '#contacto',
-        text: 'Contáctanos',
-        icon: <FaEnvelope />,
-        visible: true
-    }
-]
+export const navList = [{
+    id: 0,
+    list: 'Ubicanos',
+    icon: <FaMapMarkerAlt />,
+    tagetId: '#ubicacion'
+}, {
+    id: 1,
+    list: 'Sobre Nosotros',
+    icon: <FaUsers />,
+    targetId: '#nosotros'
+}, {
+    id: 2,
+    list: 'Servicios',
+    icon: <FaTools />,
+    targetId: '#servicios'
+}, {
+    id: 3,
+    list: 'Contactanos',
+    icon: <FaEnvelope />,
+    targetId: '#contactanos'
+}]
