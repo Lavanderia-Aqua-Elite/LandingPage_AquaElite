@@ -3,7 +3,7 @@
 
 /* Modulo css del boton expandible */
 .toggleBtn {
-    float: right;
+    display: inline;
     background: none;
     border: none;
     cursor: pointer;

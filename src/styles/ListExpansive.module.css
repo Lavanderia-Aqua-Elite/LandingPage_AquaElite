@@ -14,6 +14,7 @@
 .navItem {
     display: inline-flex;    /* Mantiene inline-flex para los items */
     align-items: center;
+    padding: 1rem;
 }
 
 .navLink {
