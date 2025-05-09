@@ -1,0 +1,25 @@
+/* Importar modulo css global */
+@import url(../index.module.css);
+
+/* Modulo css del boton expandible */
+.toggleBtn {
+    float: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: var(--fontsize-btnToggle);
+    padding: var(--fontsize-btnToggle);
+}
+
+.expanded {
+    background: var(--bg-navbar);
+}
+
+.iconBtn {
+    color: var(--color-btnToggle);
+    display: inline-block;
+}
+
+.iconBtn:hover {
+    color: var(--color-btnToogleHover)
+}

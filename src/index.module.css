@@ -19,6 +19,8 @@
   --color-textCustomer: #d9472c;
   --color-textUserMsj: #111111;
   --color-nameLogo: #ffffff;
+  --color-btnToggle: #ffffff;
+  --color-btnToogleHover: #cccccc;
 
   /* Tipografias */
   --font-title: 'Playfair Display', serif;
@@ -28,6 +30,7 @@
   --font-nameLogo: 'Montserrat', sans-serif;
 
   /* Tamaño de letra */
+  --fontsize-btnToggle: 1.5rem;
   --fontsize-nameLogo: 2rem;
 
 }

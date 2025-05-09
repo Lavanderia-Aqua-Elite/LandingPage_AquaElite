@@ -12,6 +12,7 @@ export default function Header() {
             {/* Encabezado */}
             <header className={classes.header}>
                 <NameOrganization />
+                {/* Botón expansivo */}
                 <ToggleBtn />
             </header>
 

@@ -1,5 +1,6 @@
 // Importa los modulos necesarios
 import React from "react";
+import classes from '../styles/ToggleBtn.module.css';
 
 // Exporta por defecto y crea el componente
 export default function ToggleBtn( {isExpanded, onToggle} ) {
@@ -8,13 +9,13 @@ export default function ToggleBtn( {isExpanded, onToggle} ) {
             {/* Botón despegable */}
             <button
                 onClick={onToggle}
-                className={`toggle-btn ${isExpanded ? "expanded" : ""}`}
+                className={`${classes.toggleBtn} ${isExpanded ? classes.expanded : ""}`}
                 aria-label={isExpanded ? "Cerrar menú" : "Abrir menú"}
             >
             {isExpanded ? (
-                <span className="iconBtn">✕</span>
+                <span className={classes.iconBtn}>✕</span>
             ) : (
-                <span className="iconBtn">☰</span> 
+                <span className={classes.iconBtn}>☰</span> 
             )}
             </button>
         </>
