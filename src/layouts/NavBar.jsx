@@ -14,10 +14,12 @@ export default function NavBar() {
         <nav className={classes.nav}>
             {/* Nombre de la organización */}
             <NameOrganization />
-            {/* Lista expansiva */}
-            <ListExpansive />
-            {/* Botón expansivo */}
-            <ToggleBtn />
+            <div className={classes.content}>
+                {/* Lista expansiva */}
+                <ListExpansive />
+                {/* Botón expansivo */}
+                <ToggleBtn />
+            </div>
         </nav>
 
     )

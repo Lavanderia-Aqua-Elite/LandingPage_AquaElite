@@ -1,13 +1,22 @@
-/* Importar modulo css global */
+/* Importar módulo CSS global */
 @import url(../index.module.css);
 
-/* Modulo css del nav */
-.navbar {
+.nav {
     background: var(--bg-navbar);
     width: 100%;
-    height: 10dvh;
-    display: inline-flex;
+    height: 15dvh;
+    display: flex;
     position: fixed;
     align-items: center;
-    text-align: center;
+    justify-content: space-between; 
+    padding: 0 2rem;
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+/* Contenedor del contenido derecho */
+.content {
+    padding-right: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem; 
 }
