@@ -1,77 +1,113 @@
-/* Base desktop (tu versión original) */
+/* Importar modulo css global */
+@import url(../index.module.css);
+
+/* Estilos generales del modulo del NavList */
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Versión Desktop/Tablet - Lista siempre visible */
 .navList {
-    display: inline-flex;
+    display: flex;
     margin-left: auto;
     padding-right: 3rem;
-    gap: 1rem;
+    gap: 1.5rem;
     list-style: none;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
 .navItem {
     display: inline-flex;
     align-items: center;
-    padding: 1rem;
 }
 
 .navLink {
-    font-size: var(--fontsize-navLinks);
-    color: var(--color-iconTextLink);
+    font-size: var(--fontsize-navLinks, 1rem);
+    color: var(--color-iconTextLink, #333);
     display: flex;
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
 }
 
 .navLink:hover {
-    color: var(--color-iconTextLink-Hover);
+    color: var(--color-iconTextLink-Hover, #0066cc);
+    background: var(--color-navLink-bg-hover, rgba(0,0,0,0.05));
 }
 
-/* Mobile toggle (oculto en desktop) */
-.mobileToggle {
-    display: none;
-}
-
-/* Versión mobile */
+/* ===== VERSIÓN MOBILE ===== */
 @media (max-width: 768px) {
-    .navContainer {
-        position: relative;
-        width: 100%;
-    }
-
-    .mobileToggle {
-        display: block;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        z-index: 100;
-    }
-
-    .navList {
-        display: flex;
+    /* Contenedor principal en mobile */
+    .nav {
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
+        align-items: flex-end;
+    }
+
+    /* Lista de navegación - Estado inicial (oculto) */
+    .navList {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: var(--header-height, 80px);
+        left: 0;
         width: 100%;
         max-height: 0;
         overflow: hidden;
+        background: var(--color-background, #fff);
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
         padding: 0;
         margin: 0;
-        background: var(--color-background);
-        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-        transition: max-height 0.3s ease;
+        z-index: 999;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.3s ease;
     }
 
+    /* Lista expandida */
     .navList.expanded {
-        max-height: 500px; /* Ajusta según contenido */
+        display: flex;
+        max-height: 100vh;
+        opacity: 1;
+        padding: 1rem 0;
+        overflow-y: auto;
     }
 
+    /* Items del menú */
     .navItem {
         width: 100%;
-        padding: 1rem;
-        justify-content: center;
-        border-bottom: 1px solid rgba(0,0,0,0.1);
+        padding: 0.75rem 2rem;
+        border-bottom: 1px solid var(--color-border, rgba(0,0,0,0.05));
+    }
+
+    /* Enlaces */
+    .navLink {
+        width: 100%;
+        padding: 0.75rem 1rem;
+    }
+
+    /* Botón toggle */
+    .mobileToggle {
+        display: block;
+        position: relative;
+        right: 0;
+        top: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.75rem;
+        z-index: 1000;
+    }
+}
+
+/* Ocultar el botón en desktop/tablet */
+@media (min-width: 769px) {
+    .mobileToggle {
+        display: none !important;
     }
 }

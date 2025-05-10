@@ -4,20 +4,19 @@ export default function useMobileDetect(breakpoint = 768) {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        const handleResize = () => {
+        const checkIfMobile = () => {
             setIsMobile(window.innerWidth <= breakpoint);
         };
 
-        // Verifica si window está definido (para SSR)
-        if (typeof window !== 'undefined') {
-            handleResize(); // Ejecuta inmediatamente
-            window.addEventListener('resize', handleResize);
-        }
+        // Verificación inicial
+        checkIfMobile();
 
+        // Event listener para cambios de tamaño
+        window.addEventListener('resize', checkIfMobile);
+
+        // Limpieza
         return () => {
-            if (typeof window !== 'undefined') {
-                window.removeEventListener('resize', handleResize);
-            }
+            window.removeEventListener('resize', checkIfMobile);
         };
     }, [breakpoint]);
 
