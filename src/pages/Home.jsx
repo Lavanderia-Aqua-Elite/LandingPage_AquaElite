@@ -1,6 +1,7 @@
 // Importa los modulos necesarios
 import classes from '../styles/Home.module.css';
 import Header from '../layouts/Header';
+import ImageMain from '../components/ImageMain';
 
 
 
@@ -14,7 +15,7 @@ export default function Home() {
                     <Header />
                 </header>
                 <main>
-                    
+                    <ImageMain />
                 </main>
             </div>
         </>
