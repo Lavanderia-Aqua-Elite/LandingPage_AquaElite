@@ -6,12 +6,13 @@ import useToggle from '../hooks/useToggle';
 
 
 // Exporta por defecto y crea el componente
-export default function ListExpansive() {
+export default function NavList() {
     // Uso del hook para controlar el estado
     const [isExpanded, toggle] = useToggle(false);
 
     return (
-        <ul className={classes.navList}>
+        <nav className={classes.header}>
+            <ul className={classes.navList}>
             {navList.map((item) => (
                 <li key={item.id} className={classes.navItem}>
                     <a 
@@ -22,6 +23,7 @@ export default function ListExpansive() {
                         </a>
                 </li>
             ))}
-        </ul>
+            </ul>
+        </nav>
     );
 }

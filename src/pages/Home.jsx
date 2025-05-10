@@ -1,6 +1,6 @@
 // Importa los modulos necesarios
 import classes from '../styles/Home.module.css';
-import NavBar from '../layouts/NavBar';
+import Header from '../layouts/Header';
 
 
 
@@ -11,7 +11,7 @@ export default function Home() {
             {/* Contenedor */}
             <div className={classes.conteinerHome}>
                 <main>
-                    <NavBar />
+                    <Header />
                 </main>
             </div>
         </>

@@ -2,12 +2,12 @@
 import classes from '../styles/NavBar.module.css';
 import NameOrganization from "../components/NameOrganization";
 import ToggleBtn from "../components/ToggleBtn";
-import ListExpansive from "../components/ListExpansive";
+import NavList from '../components/NavList';
 
 
 
 // Exporta por defecto y crea el componente
-export default function NavBar() {
+export default function Header() {
     return (
 
         <nav className={classes.nav}>
@@ -15,7 +15,7 @@ export default function NavBar() {
             <NameOrganization />
             <div className={classes.content}>
                 {/* Lista expansiva */}
-                <ListExpansive />
+                <NavList />
                 {/* Botón expansivo */}
                 <ToggleBtn />
             </div>
