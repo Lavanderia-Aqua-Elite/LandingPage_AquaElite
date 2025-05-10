@@ -1,8 +1,7 @@
 // Importa los modulos necesarios
-import classes from '../styles/NavBar.module.css';
+import classes from '../styles/Header.module.css';
 import NameOrganization from "../components/NameOrganization";
-import ToggleBtn from "../components/ToggleBtn";
-import NavList from '../components/NavList';
+import NavList from './NavList';
 
 
 
@@ -10,14 +9,12 @@ import NavList from '../components/NavList';
 export default function Header() {
     return (
 
-        <nav className={classes.nav}>
+        <nav className={classes.header}>
             {/* Nombre de la organización */}
             <NameOrganization />
             <div className={classes.content}>
                 {/* Lista expansiva */}
                 <NavList />
-                {/* Botón expansivo */}
-                <ToggleBtn />
             </div>
         </nav>
 
