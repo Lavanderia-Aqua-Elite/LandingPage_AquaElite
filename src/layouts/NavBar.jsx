@@ -1,5 +1,4 @@
 // Importa los modulos necesarios
-import React from "react";
 import classes from '../styles/NavBar.module.css';
 import NameOrganization from "../components/NameOrganization";
 import ToggleBtn from "../components/ToggleBtn";

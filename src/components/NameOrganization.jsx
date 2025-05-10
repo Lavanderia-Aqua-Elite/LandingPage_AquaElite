@@ -1,5 +1,4 @@
 // Importa los modulos necesarios
-import React from "react";
 import classes from '../styles/NameOrganization.module.css';
 
 // Exporta y crea el componente

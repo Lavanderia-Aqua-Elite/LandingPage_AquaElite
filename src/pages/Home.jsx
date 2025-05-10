@@ -1,5 +1,4 @@
 // Importa los modulos necesarios
-import React from 'react';
 import classes from '../styles/Home.module.css';
 import NavBar from '../layouts/NavBar';
 
