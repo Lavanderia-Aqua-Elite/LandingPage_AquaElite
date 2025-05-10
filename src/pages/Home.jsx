@@ -10,8 +10,11 @@ export default function Home() {
         <>
             {/* Contenedor */}
             <div className={classes.conteinerHome}>
-                <main>
+                <header>
                     <Header />
+                </header>
+                <main>
+                    
                 </main>
             </div>
         </>
