@@ -34,6 +34,11 @@
   --fontsize-navLinks: 1.5rem;
   --fontsize-nameLogo: 2rem;
 
+  /* Tamaño de letra Responsivo */
+  --fontsize-btnToggle-responsive: 1rem;
+  --fontsize-navlinks-responsive: 1rem;
+  --fontsize-nameLogo-resposnive: 1.5rem;
+
 }
 
 body {

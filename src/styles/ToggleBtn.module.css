@@ -15,3 +15,10 @@
     color: var(--color-btnToggle);
 }
 
+/* ===== VERSIÓN MOBILE (700px o menos) ===== */
+@media (max-width: 700px) {
+    .toggleBtn {
+        font-size: var(--fontsize-btnToggle-responsive);
+    }
+}
+

@@ -44,8 +44,8 @@
     background: var(--color-navLink-bg-hover, rgba(0, 0, 0, 0.05));
 }
 
-/* ===== VERSIÓN MOBILE (768px o menos) ===== */
-@media (max-width: 768px) {
+/* ===== VERSIÓN MOBILE (700px o menos) ===== */
+@media (max-width: 700px) {
     .nav {
         flex-direction: column;
         align-items: flex-end;
@@ -56,6 +56,7 @@
 
     /* Lista de navegación */
     .navList {
+        font-size: var(--fontsize-navlinks-responsive);
         display: none;
         flex-direction: column;
         position: fixed;
@@ -85,12 +86,13 @@
     .navItem {
         width: 100%;
         padding: 0.75rem 2rem;
-        border-bottom: 1px solid var(--color-border, rgba(0, 0, 0, 0.05));
+        font-size: var(--fontsize-navlinks-responsive);
     }
 
     .navLink {
         width: 100%;
         padding: 0.75rem 1rem;
+        font-size: var(--fontsize-navlinks-responsive);
     }
 
     .navLink:hover {
@@ -109,8 +111,8 @@
         cursor: pointer;
         padding: 0.75rem;
         z-index: 101;
-        color: white !important;
-        font-size: 1.5rem;
+        color: var(--color-btnToggle) !important;
+        font-size: var(--fontsize-btnToggle-responsive);
         line-height: 1;
         filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
         transition: opacity 0.2s ease;

@@ -8,3 +8,11 @@
     color: var(--color-nameLogo);
     font-size: var(--fontsize-nameLogo);
 }
+
+/* ===== VERSIÓN MOBILE (700px o menos) ===== */
+@media (max-width: 700px) {
+    .blackText {
+        font-size: var(--fontsize-nameLogo-resposnive);
+    }
+}
+
