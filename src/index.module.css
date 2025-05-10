@@ -23,6 +23,7 @@
   --color-btnToogleHover: #12097b;
 
   /* Tipografias */
+  --font-mainTitle: 'Arial Black', sans-serif;
   --font-title: 'Playfair Display', serif;
   --font-text: 'Roboto', sans-serif;
   --font-subtitle: 'Montserrat', sans-serif;
@@ -33,11 +34,13 @@
   --fontsize-btnToggle: 1.5rem;
   --fontsize-navLinks: 1.5rem;
   --fontsize-nameLogo: 2rem;
+  --fontsize-maintitle: 3rem;
 
   /* Tamaño de letra Responsivo */
   --fontsize-btnToggle-responsive: 1rem;
   --fontsize-navlinks-responsive: 1rem;
   --fontsize-nameLogo-resposnive: 1.5rem;
+  --fontsize-maintitle-responsive: 1.8rem;
 
 }
 

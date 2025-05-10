@@ -1,0 +1,35 @@
+/* Importar modulo css global */
+@import url(../index.module.css);
+
+/* modulo de MainTitle */
+
+.conteinerMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: transparent; /* o el color que prefieras */
+    position: relative;
+}
+
+.mainTitle {
+    font-size: var(--fontsize-maintitle); 
+    font-family: var(--font-mainTitle);
+    color: var(--color-maintitle);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* Añade sombra al texto para efecto 'resaltado': */
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.7),
+        0 0 10px rgba(255, 255, 255, 0.5);
+        /* Para un efecto más similar, puedes agregar un contorno: */
+        -webkit-text-stroke: 2px #000; /* Contorno negro */
+}
+
+/* ===== VERSIÓN MOBILE (700px o menos) ===== */
+@media (max-width: 700px) {
+    .mainTitle {
+        font-size: var(--fontsize-maintitle-responsive);
+    }
+}
