@@ -7,19 +7,11 @@
     background: none;
     border: none;
     cursor: pointer;
-    font-size: var(--fontsize-btnToggle);
-    padding: var(--fontsize-btnToggle);
-}
-
-.expanded {
-    background: var(--bg-navbar);
-}
-
-.iconBtn {
     color: var(--color-btnToggle);
-    display: inline-block;
+    font-size: var(--fontsize-btnToggle);
 }
 
-.iconBtn:hover {
-    color: var(--color-btnToogleHover)
+.toggleBtn:hover {
+    color: var(--color-btnToggle);
 }
+
