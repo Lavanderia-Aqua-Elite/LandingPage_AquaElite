@@ -6,26 +6,26 @@ import { FaMapMarkerAlt, FaUsers, FaTools, FaEnvelope } from 'react-icons/fa';
 export const navList = [
   {
     id: 0,
-    list: 'Ubicanos',
-    icon: React.createElement(FaMapMarkerAlt), // Sin JSX
-    targetId: '#ubicacion'
-  },
-  {
-    id: 1,
     list: 'Sobre Nosotros',
     icon: React.createElement(FaUsers),
     targetId: '#nosotros'
   },
   {
-    id: 2,
+        id: 1,
     list: 'Servicios',
     icon: React.createElement(FaTools),
     targetId: '#servicios'
   },
   {
-    id: 3,
+    id: 2,
     list: 'Contactanos',
     icon: React.createElement(FaEnvelope),
     targetId: '#contactanos'
+  },
+  {
+    id: 3,
+    list: 'Ubicanos',
+    icon: React.createElement(FaMapMarkerAlt), // Sin JSX
+    targetId: '#ubicacion'
   }
 ];
