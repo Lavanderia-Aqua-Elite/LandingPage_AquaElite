@@ -10,6 +10,8 @@
   --bg-card: linear-gradient(90deg, #000000, #737373);
   --bg-lineAction: linear-gradient(90deg, #a6a6a6, #ffffff);
   --bg-link_hover: linear-gradient(90deg, #000000, #292727);
+  --bg-sectionMovil: #111;
+  --bg-movil: #333;
 
   /* Colores */
   --color-maintitle: #ffffff;

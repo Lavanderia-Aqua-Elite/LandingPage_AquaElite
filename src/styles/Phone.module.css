@@ -13,7 +13,7 @@
     border-radius: 30px;
     margin: 20px auto;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    background: #111;
+    background: var(--bg-sectionMovil);
     overflow: hidden;
     /* Hacemos el teléfono responsive */
     max-width: 100%;
@@ -30,7 +30,7 @@
     transform: translateX(-50%);
     width: 50%;
     height: 20px;
-    background: #333;
+    background: var(--bg-movil);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     z-index: 10;
@@ -44,7 +44,7 @@
     top: 15%;
     width: 5px;
     height: 15%;
-    background: #444;
+    background: var(--bg-movil);
     border-radius: 3px;
 }
 

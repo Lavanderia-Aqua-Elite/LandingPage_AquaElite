@@ -12,7 +12,7 @@ export default function Phone({ backgroundImage, children }) {
             <div className={classes.phoneScreen}>
                 <img 
                     src={backgroundImage} 
-                    alt="Pantalla del móvil" 
+                    alt="App movil de la lavanderia" 
                     className={classes.phoneBackground} 
                 />
                 {children}
