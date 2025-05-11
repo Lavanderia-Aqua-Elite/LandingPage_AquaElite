@@ -1,18 +1,19 @@
 // Importamos los modulos necesarios
-import './PhoneComponent.css';
-import usePhone from './usePhone'; 
+import usePhone from '../hooks/usePhone';
+import classes from '../styles/Phone.module.css';
+
 
 export default function Phone({ backgroundImage, children }) {
     // Si necesitáramos lógica, la extraeríamos al hook
     const { phoneStyles } = usePhone(); // Ejemplo de uso de hook
 
     return (
-        <div className="phone-container" style={phoneStyles}>
-            <div className="phone-screen">
+        <div className={classes.phoneContainer} style={phoneStyles}>
+            <div className={classes.phoneScreen}>
                 <img 
                     src={backgroundImage} 
                     alt="Pantalla del móvil" 
-                    className="phone-background" 
+                    className={classes.phoneBackground} 
                 />
                 {children}
             </div>
