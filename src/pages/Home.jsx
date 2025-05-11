@@ -4,6 +4,7 @@ import Header from '../layouts/Header';
 import ImageMain from '../components/ImageMain';
 import movilappPreview from '../hooks/image';
 import Phone from '../components/Phone';
+import MainTitle from '../components/MainTitle';
 
 // Exporta por defecto el componente y lo crea
 export default function Home() {
@@ -17,6 +18,15 @@ export default function Home() {
                 {/* Contenedor del main */}
                 <main className={classes.mainContent}>
                     <ImageMain />
+                    <MainTitle 
+                        maintitle="Lavandería,
+                        Costura,
+                        Tintorería,
+                        Mantenimiento,
+                        Productos de Lavado,
+                        Venta de Lavadoras
+                        y Secadoras" 
+                    />
                     <Phone backgroundImage={movilappPreview.movilJpg}/>
                 </main>
 
