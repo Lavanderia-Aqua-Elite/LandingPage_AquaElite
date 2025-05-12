@@ -15,27 +15,30 @@ export default function Home() {
                 <header>
                     <Header />
                 </header>
-                {/* Contenedor del main */}
+
                 <main className={classes.mainContent}>
                     <section className={classes.sectionHome}>
+                    {/* Fondo */}
                         <div className={classes.bgHome}>
                             <ImageMain />
                         </div>
+
+                        {/* Contenido */}
                         <div className={classes.contentHome}>
                             <div className={classes.titleHome}>
                                 <MainTitle 
-                                    maintitle="Lavandería,
-                                    Costura,
-                                    Tintorería,
-                                    Mantenimiento,
-                                    Productos de Lavado,
-                                    Venta de Lavadoras
-                                    y Secadoras" 
+                                    maintitle="Lavandería,  
+                                    tintorería  
+                                    planchadura  
+                                    con servicio a  
+                                    domicilio" 
                                 />
                             </div>
-                            <div className={classes.contentMovilHome}>
-                                <Phone backgroundImage={movilappPreview.movilJpg}/>
-                            </div>
+                        </div>
+
+                        {/* Teléfono (derecha) */}
+                        <div className={classes.contentMovilHome}>
+                            <Phone backgroundImage={movilappPreview.movilJpg}/>
                         </div>
                     </section>
                 </main>

@@ -6,4 +6,63 @@
     background: var(--bg-home);
 }
 
-/* ===== Sección del contenedor main ===== */
+/* ===== Contenedor main ===== */
+
+/* ===== Sección del HOME ===== */
+/* --- Base --- */
+.mainContent {
+    position: relative;
+    width: 100%;
+    min-height: 150vh; /* Aumenta la altura (ej: 150vh = 1.5 veces el viewport) */
+    overflow: hidden; 
+}
+
+/* Fondo (absoluto y detrás) */
+.bgHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ocupará el 100% del contenedor padre (mainContent) */
+    z-index: 0;
+}
+
+/* Contenedor flexible (para alinear texto y teléfono) */
+.sectionHome {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;  /* Centrado vertical */
+    justify-content: space-between;  /* Texto izquierda, teléfono derecha */
+    min-height: 100vh;
+    padding: 0 5%;  /* Espacio a los lados */
+}
+
+/* --- Texto (izquierda) --- */
+.contentHome {
+    flex: 0 0 50%;  /* Ancho fijo del 50% */
+    margin-top: 5rem;
+}
+
+.titleHome {
+    font-family: Arial, sans-serif;  /* Fuente simple como la imagen */
+    font-size: clamp(1.5rem, 3vw, 2rem);  /* Tamaño responsive */
+    line-height: 1.5;
+    white-space: pre-line;  /* Respeta saltos de línea */
+    color: #000;  /* Color negro */
+    text-transform: lowercase;  /* Texto en minúsculas como la imagen */
+}
+
+/* --- Teléfono (derecha) --- */
+.contentMovilHome {
+    margin-top: 8rem;
+    flex: 0 0 40%;  /* Ancho menor para el teléfono */
+    display: flex;
+    justify-content: flex-end;  /* Alineado a la derecha */
+}
+
+.phoneContainer {
+    width: 100%;
+    max-width: 250px;  /* Ajusta según el tamaño de tu imagen */
+    height: auto;
+}
