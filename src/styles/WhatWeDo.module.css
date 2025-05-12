@@ -4,6 +4,5 @@
 /* Modulo css de Home */
 .contentService {
     width: 100%;
-    height: 100dvh; /* O el alto que prefieras */
     background: var(--bg-services);
 }

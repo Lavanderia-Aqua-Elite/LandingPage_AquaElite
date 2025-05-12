@@ -26,10 +26,6 @@ export default function WhatWeDo() {
                             textcard="Ropa perfectamente planchada, lista para usar y sin esfuerzo."
                         />
                         <CardService
-                            titlecard="Planchadura"
-                            textcard="Ropa perfectamente planchada, lista para usar y sin esfuerzo."
-                        />
-                        <CardService
                             titlecard="Mantenimiento"
                             textcard="Ofrecemos servicios de mantenimiento para que tu ropa y maquinaria estén en perfectas"
                         />
