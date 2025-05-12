@@ -9,7 +9,7 @@ export default function WhatWeDo() {
             
             <section className="sectionService">
                     <div>
-                        <SubTitle subtitle="Servicios" />
+                        <SubTitle subtitle="¿Qué Ofrecemos?" />
                     </div>
             </section>
         </div>
