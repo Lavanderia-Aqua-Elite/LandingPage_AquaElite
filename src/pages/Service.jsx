@@ -5,7 +5,10 @@ import classes from '../styles/Service.module.css';
 export default function Service() {
     return (
         <div className={classes.contentService}>
+            
+            <section className={classes.sectionService}>
 
+            </section>
         </div>
     )
 }
