@@ -13,7 +13,30 @@ export default function WhatWeDo() {
                         <SubTitle subtitle="¿Qué Ofrecemos?" />
                     </div>
                     <div>
-                        <CardService />
+                        <CardService
+                            titlecard="Lavandería"
+                            textcard="Lava y cuida tu ropa con nuestro servicio de lavandería de confianza."
+                        />
+                        <CardService
+                            titlecard="Tintorería"
+                            textcard="Deja en nuestras manos la limpieza de tus prendas delicadas y costosas."
+                        />
+                        <CardService
+                            titlecard="Planchadura"
+                            textcard="Ropa perfectamente planchada, lista para usar y sin esfuerzo."
+                        />
+                        <CardService
+                            titlecard="Planchadura"
+                            textcard="Ropa perfectamente planchada, lista para usar y sin esfuerzo."
+                        />
+                        <CardService
+                            titlecard="Mantenimiento"
+                            textcard="Ofrecemos servicios de mantenimiento para que tu ropa y maquinaria estén en perfectas"
+                        />
+                        <CardService
+                            titlecard="Ventas de productos"
+                            textcard="Encuentra los mejores productos de limpieza y cuidado en un solo lugar, ¡a precios increíbles!"
+                        />
                     </div>
             </section>
         </div>

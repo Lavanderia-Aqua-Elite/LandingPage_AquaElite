@@ -31,9 +31,9 @@ export default function Home() {
                                 <MainTitle 
                                     maintitle="Lavandería,  
                                     tintorería,  
-                                    planchadura  
-                                    con servicio a  
-                                    domicilio" 
+                                    planchadura,
+                                    Mantenimiento y
+                                    Venta de Productos" 
                                 />
                             </div>
                         </div>
