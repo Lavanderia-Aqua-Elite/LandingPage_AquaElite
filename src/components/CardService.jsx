@@ -1,4 +1,5 @@
 // Importa los modulos necesarios
+import classes from '../styles/CardService.module.css';
 
 // Exporta el componente por defecto y lo crea
 export default function CardService({ titlecard, imagacard, textcard }) {
