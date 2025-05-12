@@ -15,6 +15,7 @@
 
   /* Colores */
   --color-maintitle: #ffffff;
+  --color-subtitle: #dddddd;
   --color-text: #ffffff;
   --color-iconTextLink: #ffffff;
   --color-iconTextLink-Hover: #12097b;
@@ -38,12 +39,14 @@
   --fontsize-navLinks: 1.5rem;
   --fontsize-nameLogo: 2rem;
   --fontsize-maintitle: 3rem;
+  --fontsize-subtitle: 2rem;
 
   /* Tamaño de letra Responsivo */
   --fontsize-btnToggle-responsive: 1rem;
   --fontsize-navlinks-responsive: 1rem;
   --fontsize-nameLogo-resposnive: 1.5rem;
   --fontsize-maintitle-responsive: 1.8rem;
+  --fontsize-subtitle-responsive: 1.5rem;
 
 }
 
