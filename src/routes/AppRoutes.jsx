@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Importar páginas
 import Home from "../pages/Home";
-import Service from "../pages/Service";
+
 
 // Exporta por defecto y crea el componente para manejar las rutas
 export default function AppRoutes() {
@@ -11,7 +11,6 @@ export default function AppRoutes() {
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/service" element={<Service />} />
             </Routes>
         </Router>
     );

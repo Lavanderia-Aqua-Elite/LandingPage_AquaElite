@@ -5,6 +5,7 @@ import ImageMain from '../components/ImageMain';
 import movilappPreview from '../hooks/image';
 import Phone from '../components/Phone';
 import MainTitle from '../components/MainTitle'
+import WhatWeDo from './WhatWeDo';
 
 
 // Exporta por defecto el componente y lo crea
@@ -29,7 +30,7 @@ export default function Home() {
                             <div className={classes.titleHome}>
                                 <MainTitle 
                                     maintitle="Lavandería,  
-                                    tintorería  
+                                    tintorería,  
                                     planchadura  
                                     con servicio a  
                                     domicilio" 
@@ -44,6 +45,10 @@ export default function Home() {
                     </section>
 
                 </main>
+
+                <section>
+                    <WhatWeDo />
+                </section>
 
             </div>
         </>
