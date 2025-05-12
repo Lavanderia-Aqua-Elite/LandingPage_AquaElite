@@ -1,0 +1,10 @@
+/* Importar modulo css global */
+@import url(../index.module.css);
+
+/* modulo de SubTitle */
+.conteinerSub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

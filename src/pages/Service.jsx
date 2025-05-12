@@ -6,7 +6,7 @@ export default function Service() {
     return (
         <div className={classes.contentService}>
             
-            <section className={classes.sectionService}>
+            <section className="sectionService">
 
             </section>
         </div>

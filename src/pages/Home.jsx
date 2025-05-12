@@ -4,7 +4,8 @@ import Header from '../layouts/Header';
 import ImageMain from '../components/ImageMain';
 import movilappPreview from '../hooks/image';
 import Phone from '../components/Phone';
-import MainTitle from '../components/MainTitle';
+import MainTitle from '../components/MainTitle'
+
 
 // Exporta por defecto el componente y lo crea
 export default function Home() {
@@ -41,6 +42,7 @@ export default function Home() {
                             <Phone backgroundImage={movilappPreview.movilJpg}/>
                         </div>
                     </section>
+
                 </main>
 
             </div>
