@@ -45,7 +45,7 @@
 }
 
 .titleHome {
-    font-family: Arial, sans-serif;  /* Fuente simple como la imagen */
+    font-family: var(--font-mainTitle);  /* Fuente simple como la imagen */
     font-size: clamp(1.5rem, 3vw, 2rem);  /* Tamaño responsive */
     line-height: 1.5;
     white-space: pre-line;  /* Respeta saltos de línea */
@@ -55,7 +55,7 @@
 
 /* --- Teléfono (derecha) --- */
 .contentMovilHome {
-    margin-top: 8rem;
+    margin-top: 7rem;
     flex: 0 0 40%;  /* Ancho menor para el teléfono */
     display: flex;
     justify-content: flex-end;  /* Alineado a la derecha */
@@ -65,4 +65,22 @@
     width: 100%;
     max-width: 250px;  /* Ajusta según el tamaño de tu imagen */
     height: auto;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .sectionHome {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+    }
+    .contentHome, 
+    .contentMovilHome {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .contentMovilHome {
+        justify-content: center;
+        margin-top: 2rem;
+    }
 }

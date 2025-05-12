@@ -7,8 +7,8 @@
 /* Contenedor principal */
 .phoneContainer {
     position: relative;
-    width: 300px;
-    height: 600px;
+    width: 250px;
+    height: 550px;
     border: 12px solid #333;
     border-radius: 30px;
     margin: 20px auto;
@@ -76,8 +76,8 @@
 /* Media Queries para móviles pequeños */
 @media (max-width: 480px) {
     .phoneContainer {
-        width: 200px;
-        height: 400px;
+        width: 150px;
+        height: 320px;
         border-width: 8px;
         border-radius: 25px;
     }
