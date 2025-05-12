@@ -1,4 +1,5 @@
 // Importa los modulos necesarios
+import CardService from '../components/CardService';
 import SubTitle from '../components/SubTitle';
 import classes from '../styles/WhatWeDo.module.css';
 
@@ -10,6 +11,9 @@ export default function WhatWeDo() {
             <section className="sectionService">
                     <div>
                         <SubTitle subtitle="¿Qué Ofrecemos?" />
+                    </div>
+                    <div>
+                        <CardService />
                     </div>
             </section>
         </div>

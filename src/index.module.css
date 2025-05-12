@@ -12,6 +12,7 @@
   --bg-link_hover: linear-gradient(90deg, #000000, #292727);
   --bg-sectionMovil: #111;
   --bg-movil: #333;
+  --bg-cardService: #000000;
 
   /* Colores */
   --color-maintitle: #ffffff;
@@ -25,6 +26,8 @@
   --color-nameLogo: #ffffff;
   --color-btnToggle: #ffffff;
   --color-btnToogleHover: #12097b;
+  --color-titlecard: #ffffff;
+  --color-textcard: #dddddd;
 
   /* Tipografias */
   --font-mainTitle: 'Arial Black', sans-serif;
@@ -33,6 +36,7 @@
   --font-subtitle: 'Montserrat', sans-serif;
   --font-link: --font-strong: 'Courier New', Courier, monospace;
   --font-nameLogo: 'Montserrat', sans-serif;
+  --font-titleCard: 'Courier New', Courier, monospace;
 
   /* Tamaño de letra */
   --fontsize-btnToggle: 1.5rem;
@@ -40,6 +44,8 @@
   --fontsize-nameLogo: 2rem;
   --fontsize-maintitle: 3rem;
   --fontsize-subtitle: 2.5rem;
+  --fontsize-titlecard: 1.3rem;
+  --fontsize-textcard: 1rem;
 
   /* Tamaño de letra Responsivo */
   --fontsize-btnToggle-responsive: 1rem;
