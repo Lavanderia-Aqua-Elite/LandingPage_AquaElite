@@ -49,6 +49,7 @@
   --fontsize-titlecard: 1.3rem;
   --fontsize-textcard: 1rem;
   --fontsize-minititle: 2.2rem;
+  --fontseize-text: 1rem;
 
   /* Tamaño de letra Responsivo */
   --fontsize-btnToggle-responsive: 1rem;
@@ -57,6 +58,7 @@
   --fontsize-maintitle-responsive: 1.8rem;
   --fontsize-subtitle-responsive: 1.5rem;
   --fontsize-minititle-responsive: 1.3rem;
+  --fontsieze-text-responsive: 1rem;
 
 }
 

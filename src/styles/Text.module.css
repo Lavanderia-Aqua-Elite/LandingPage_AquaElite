@@ -1,0 +1,24 @@
+/* Importar modulo css global */
+@import url(../index.module.css);
+
+/* Modulo de text */
+.contentText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textDescription {
+    font-family: var(--font-text);
+    font-size: var(--fontseize-text);
+    color: var(--color-text);
+}
+
+
+/* ===== VERSIÓN MOBILE (700px o menos) ===== */
+@media (max-width: 700px) {
+    .textDescription {
+        font-size: var(--fontsieze-text-responsive);
+    }
+}
+
