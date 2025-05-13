@@ -18,12 +18,6 @@
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
-    /* Añade sombra al texto para efecto 'resaltado': */
-    text-shadow: 
-        1px 1px 2px rgba(0, 0, 0, 0.7),
-        0 0 10px rgba(255, 255, 255, 0.5);
-        /* Para un efecto más similar, puedes agregar un contorno: */
-        -webkit-text-stroke: 2px #000; /* Contorno negro */
 }
 
 /* ===== VERSIÓN MOBILE (700px o menos) ===== */

@@ -1,13 +1,13 @@
 // Importa los modulos necesarios
 import CardService from '../components/CardService';
 import SubTitle from '../components/SubTitle';
-
 import classes from '../styles/WhatWeDo.module.css';
 import laundryIco from '../hooks/image';
 import dryleanerIco from '../hooks/image';
 import laundryServiceIco from '../hooks/image';
 import MaintenanceIco from '../hooks/image';
 import shopIco from '../hooks/image';
+import MiniTitle from '../components/MiniTitle';
 
 // Exporta por defecto y crea el componente
 export default function WhatWeDo() {
@@ -46,6 +46,7 @@ export default function WhatWeDo() {
                         />
                     </div>
                     <div className='contenService'>
+                        <MiniTitle minititle="Servicios" />
                     </div>
             </section>
         </div>
