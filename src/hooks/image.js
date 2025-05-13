@@ -5,6 +5,9 @@ import washing from '../assets/image/WashingMachine.png';
 import movilappPreview from '../assets/image/movilappPreview.jpg';
 import laundryIco from '../assets/image/laundryIco.png';
 import dryleanerIco from '../assets/image/dryleanerIco.png';
+import laundryServiceIco from '../assets/image/laundryServiceIco.png';
+import MaintenanceIco from '../assets/image/MaintenanceIco.png';
+import shopIco from '../assets/image/shopIco.png';
 
 // Exporta por defecto las imagenes y las vuelve en js
 export default {
@@ -13,5 +16,8 @@ export default {
     "washingPng": washing,
     "movilJpg": movilappPreview,
     "laundryPng": laundryIco,
-    "dryleanerPng": dryleanerIco
+    "dryleanerPng": dryleanerIco,
+    "laundryServicePng": laundryServiceIco,
+    "MaintenancePng": MaintenanceIco,
+    "shopPng": shopIco
 }

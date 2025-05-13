@@ -4,6 +4,9 @@ import SubTitle from '../components/SubTitle';
 import classes from '../styles/WhatWeDo.module.css';
 import laundryIco from '../hooks/image';
 import dryleanerIco from '../hooks/image';
+import laundryServiceIco from '../hooks/image';
+import MaintenanceIco from '../hooks/image';
+import shopIco from '../hooks/image';
 
 // Exporta por defecto y crea el componente
 export default function WhatWeDo() {
@@ -27,14 +30,17 @@ export default function WhatWeDo() {
                         />
                         <CardService
                             titlecard="Planchadura"
+                            imagacard={laundryServiceIco.laundryServicePng}
                             textcard="Ropa perfectamente planchada, lista para usar y sin esfuerzo."
                         />
                         <CardService
                             titlecard="Mantenimiento"
+                            imagacard={MaintenanceIco.MaintenancePng}
                             textcard="Ofrecemos servicios de mantenimiento para que tu ropa y maquinaria estén en perfectas"
                         />
                         <CardService
                             titlecard="Ventas de productos"
+                            imagacard={shopIco.shopPng}
                             textcard="Encuentra los mejores productos de limpieza y cuidado en un solo lugar, ¡a precios increíbles!"
                         />
                     </div>
