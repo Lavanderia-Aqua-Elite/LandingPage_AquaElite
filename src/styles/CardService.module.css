@@ -33,6 +33,24 @@
     font-weight: 600;
 }
 
+.contentImgCardService {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.imgCardService {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.boxCardService:hover .imgCardService {
+    transform: scale(1.05);
+}
+
+
 .contentTextCardService {
     padding: 1rem;
 }

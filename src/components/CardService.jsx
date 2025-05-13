@@ -10,6 +10,9 @@ export default function CardService({ titlecard, textcard }) {
             <div className={classes.titleCardService}>
                 <h4 className={classes.titleCard}>{titlecard}</h4>
             </div>
+            <div className={classes.contentImgCardService}>
+                <img className={classes.imgCardService} src={imagacard} alt={titlecard} />
+            </div>
             <div className={classes.contentTextCardService}>
                 <p className={classes.textCardService}>{textcard}</p>
             </div>
