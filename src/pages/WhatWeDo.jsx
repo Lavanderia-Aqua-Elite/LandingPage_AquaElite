@@ -1,6 +1,7 @@
 // Importa los modulos necesarios
 import CardService from '../components/CardService';
 import SubTitle from '../components/SubTitle';
+
 import classes from '../styles/WhatWeDo.module.css';
 import laundryIco from '../hooks/image';
 import dryleanerIco from '../hooks/image';
@@ -14,10 +15,10 @@ export default function WhatWeDo() {
         <div className={classes.contentService}>
             
             <section className="sectionService">
-                    <div>
+                    <div className='subtitleService'>
                         <SubTitle subtitle="¿Qué Ofrecemos?" />
                     </div>
-                    <div>
+                    <div className="contentCardService">
                         <CardService
                             titlecard="Lavandería"
                             imagacard={laundryIco.laundryPng}
@@ -43,6 +44,8 @@ export default function WhatWeDo() {
                             imagacard={shopIco.shopPng}
                             textcard="Encuentra los mejores productos de limpieza y cuidado en un solo lugar, ¡a precios increíbles!"
                         />
+                    </div>
+                    <div className='contenService'>
                     </div>
             </section>
         </div>

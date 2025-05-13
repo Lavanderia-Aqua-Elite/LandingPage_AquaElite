@@ -28,6 +28,7 @@
   --color-btnToogleHover: #12097b;
   --color-titlecard: #ffffff;
   --color-textcard: #dddddd;
+  --color-minititle: #cccccc;
 
   /* Tipografias */
   --font-mainTitle: 'Arial Black', sans-serif;
@@ -37,6 +38,7 @@
   --font-link: --font-strong: 'Courier New', Courier, monospace;
   --font-nameLogo: 'Montserrat', sans-serif;
   --font-titleCard: 'Courier New', Courier, monospace;
+  --font-minititle: 'Courier New', Courier, monospace;
 
   /* Tamaño de letra */
   --fontsize-btnToggle: 1.5rem;
@@ -46,6 +48,7 @@
   --fontsize-subtitle: 2.5rem;
   --fontsize-titlecard: 1.3rem;
   --fontsize-textcard: 1rem;
+  --fontsize-minititle: 2.2rem;
 
   /* Tamaño de letra Responsivo */
   --fontsize-btnToggle-responsive: 1rem;
@@ -53,6 +56,7 @@
   --fontsize-nameLogo-resposnive: 1.5rem;
   --fontsize-maintitle-responsive: 1.8rem;
   --fontsize-subtitle-responsive: 1.5rem;
+  --fontsize-minititle-responsive: 1.3rem;
 
 }
 
