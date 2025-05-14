@@ -13,7 +13,6 @@
 .mainContent {
     position: relative;
     width: 100%;
-    min-height: 150vh; /* Aumenta la altura (ej: 150vh = 1.5 veces el viewport) */
     overflow: hidden; 
 }
 
