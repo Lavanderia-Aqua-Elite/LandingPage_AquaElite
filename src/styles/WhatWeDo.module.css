@@ -1,8 +1,48 @@
-/* Importar modulo css global */
+/* Importar módulo CSS global */
 @import url(../index.module.css);
 
-/* Modulo css de Home */
+/* Estilo ultra compacto */
 .contentService {
     width: 100%;
-    background: var(--bg-services);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0; /* Eliminado completamente */
+}
+
+.sectionService {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Cero espacio entre elementos */
+}
+
+.subtitleService {
+    text-align: center;
+    margin-bottom: -12rem; /* Sin márgenes */
+    padding: 0.2rem 0; /* Mínimo padding vertical */
+}
+
+.cardsContainer {
+    display: flex;
+    gap: 0.5rem; /* Espacio mínimo entre cards */
+    padding: 0.2rem 0; /* Casi eliminado */
+}
+
+/* Scroll invisible (se mantiene igual) */
+.react-horizontal-scrolling-menu--scroll-container {
+    overflow: hidden;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Versión móvil aún más compacta */
+@media (max-width: 768px) {
+    .cardsContainer {
+        gap: 0.3rem; /* Espacio casi inexistente */
+    }
 }

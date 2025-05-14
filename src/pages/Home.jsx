@@ -2,7 +2,7 @@
 import classes from '../styles/Home.module.css';
 import Header from '../layouts/Header';
 import ImageMain from '../components/ImageMain';
-import movilappPreview from '../hooks/image';
+import image from '../hooks/image';
 import Phone from '../components/Phone';
 import MainTitle from '../components/MainTitle'
 import WhatWeDo from './WhatWeDo';
@@ -40,7 +40,7 @@ export default function Home() {
 
                         {/* Teléfono (derecha) */}
                         <div className={classes.contentMovilHome}>
-                            <Phone backgroundImage={movilappPreview.movilJpg}/>
+                            <Phone backgroundImage={image.movilJpg}/>
                         </div>
                     </section>
 
