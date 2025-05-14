@@ -6,6 +6,7 @@ import image from '../hooks/image';
 import Phone from '../components/Phone';
 import MainTitle from '../components/MainTitle'
 import WhatWeDo from './WhatWeDo';
+import AboutMe from './AboutMe';
 
 
 // Exporta por defecto el componente y lo crea
@@ -46,9 +47,9 @@ export default function Home() {
 
                 </main>
 
-                <section>
-                    <WhatWeDo />
-                </section>
+                <WhatWeDo />
+                <AboutMe />
+
 
             </div>
         </>

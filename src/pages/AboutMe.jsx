@@ -1,11 +1,14 @@
-// Importa los modulos necesarios
+import SubTitle from '../components/SubTitle';
 import classes from '../styles/AboutMe.module.css';
 
-// Exporta por defecto y crea el componente
 export default function AboutMe() {
     return(
-        <div className={classes.conteinAboutMe}>
-
+        <div className={classes.aboutMeContainer}>
+            <section className={classes.aboutMeSection}>
+                <div className={classes.titleWrapper}>
+                    <SubTitle subtitle="Sobre Nosotros" />
+                </div>
+            </section>
         </div>
     )
 }

@@ -1,48 +1,79 @@
-/* Importar módulo CSS global */
 @import url(../index.module.css);
 
-/* Estilo ultra compacto */
+/* Contenedor principal - modificado para evitar colapso */
 .contentService {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0; /* Eliminado completamente */
+    margin: 2rem auto; /* Añadido margen vertical */
+    padding: 1rem; /* Padding mínimo para respiro */
+    display: flow-root; /* Previene margin collapse */
 }
 
+/* Sección de servicios - ahora con espacio controlado */
 .sectionService {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0; /* Cero espacio entre elementos */
+    gap: 1.5rem; /* Espacio saludable entre elementos */
+    margin-bottom: 2rem; /* Separación de la siguiente sección */
 }
 
 .subtitleService {
     text-align: center;
-    margin-bottom: -12rem; /* Sin márgenes */
-    padding: 0.2rem 0; /* Mínimo padding vertical */
+    margin: 1rem 0; /* Márgenes equilibrados */
+    padding: 0.5rem 0; /* Padding legible */
+    position: relative;
 }
 
+/* Contenedor de tarjetas - espacio optimizado */
 .cardsContainer {
     display: flex;
-    gap: 0.5rem; /* Espacio mínimo entre cards */
-    padding: 0.2rem 0; /* Casi eliminado */
+    gap: 1rem; /* Espacio suficiente para distinguir tarjetas */
+    padding: 0.5rem 0; /* Padding mínimo pero visible */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
-/* Scroll invisible (se mantiene igual) */
+/* Scroll personalizado (más discreto) */
 .react-horizontal-scrolling-menu--scroll-container {
-    overflow: hidden;
+    overflow: auto;
     width: 100%;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) transparent;
+    padding-bottom: 0.5rem; /* Espacio para scroll */
 }
 
 .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
-    display: none;
+    height: 4px;
 }
 
-/* Versión móvil aún más compacta */
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 2px;
+}
+
+/* Versión móvil - compacta pero usable */
 @media (max-width: 768px) {
-    .cardsContainer {
-        gap: 0.3rem; /* Espacio casi inexistente */
+    .contentService {
+        margin: 1.5rem auto;
+        padding: 0.5rem;
     }
+    
+    .sectionService {
+        gap: 1rem;
+    }
+    
+    .cardsContainer {
+        gap: 0.75rem;
+        scroll-snap-type: x proximity;
+    }
+}
+
+/* Clase para prevenir colapso con AboutMe */
+.preventCollapse::after {
+    content: "";
+    display: block;
+    height: 1px;
+    margin-top: 1.5rem;
+    visibility: hidden;
 }

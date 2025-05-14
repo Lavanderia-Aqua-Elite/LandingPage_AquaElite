@@ -8,7 +8,7 @@ import 'react-horizontal-scrolling-menu/dist/styles.css'; // No olvides importar
 
 export default function WhatWeDo() {
     return (
-        <div className={classes.contentService}>
+        <div className={`${classes.contentService} ${classes.preventCollapse}`}>
             <section className={classes.sectionService}>
                 <div className={classes.subtitleService}>
                     <SubTitle subtitle="¿Qué Ofrecemos?" />
