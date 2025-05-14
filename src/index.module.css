@@ -3,6 +3,7 @@
   /* Fondos */
   --bg-home: linear-gradient(90deg, #5de0e6, #004aad);
   --bg-services: linear-gradient(90deg, #5de0e6, #004aad);
+  --bg-aboutMe: linear-gradient(90deg, #5de0e6, #004aad);
   --bg-navbar: radial-gradient(circle at 50% 50%, #67176e, #7c90f2);
   --bg-form: linear-gradient(90deg, #8652ff, #ff914d);
   --bg-footer: radial-gradient(circle at 0% 0%, #000f9b, #eb0000, #a000eb);
