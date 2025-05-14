@@ -27,7 +27,7 @@ export default function Home() {
                         </div>
 
                         {/* Contenido */}
-                        <div className={classes.contentHome}>
+                        <div id='#inicio' className={classes.contentHome}>
                             <div className={classes.titleHome}>
                                 <MainTitle 
                                     maintitle="Lavandería,  
