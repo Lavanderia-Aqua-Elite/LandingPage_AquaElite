@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    background: var(--bg-navbar, #ffffff);
+    background: var(--bg-navbar);
     z-index: 100;
     min-height: 80px;
 }
@@ -28,8 +28,8 @@
 }
 
 .navLink {
-    font-size: var(--fontsize-navLinks, 1rem);
-    color: var(--color-iconTextLink, #333333);
+    font-size: var(--fontsize-navLinks);
+    color: var(--color-iconTextLink);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -40,8 +40,8 @@
 }
 
 .navLink:hover {
-    color: var(--color-iconTextLink-Hover, #0066cc);
-    background: var(--color-navLink-bg-hover, rgba(0, 0, 0, 0.05));
+    color: var(--color-iconTextLink-Hover);
+    background: var(--color-navLink-bg-hover);
 }
 
 /* ===== VERSIÓN MOBILE (700px o menos) ===== */
@@ -65,7 +65,7 @@
         width: 100%;
         max-height: 0;
         overflow: hidden;
-        background: var(--bg-navbar, #ffffff);
+        background: var(--bg-navbar);
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         padding: 0;
         margin: 0;
@@ -96,7 +96,7 @@
     }
 
     .navLink:hover {
-        background-color: var(--color-mobile-link-hover, rgba(0, 102, 204, 0.1));
+        background-color: var(--color-mobile-link-hover);
     }
 
     /* Botón Toggle - Versión Blanca */
