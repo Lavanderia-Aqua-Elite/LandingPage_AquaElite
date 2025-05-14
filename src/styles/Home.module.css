@@ -41,16 +41,10 @@
 /* --- Texto (izquierda) --- */
 .contentHome {
     flex: 0 0 50%;  /* Ancho fijo del 50% */
-    margin-top: 5rem;
 }
 
 .titleHome {
     font-family: var(--font-mainTitle);  /* Fuente simple como la imagen */
-    font-size: clamp(1.5rem, 3vw, 2rem);  /* Tamaño responsive */
-    line-height: 1.5;
-    white-space: pre-line;  /* Respeta saltos de línea */
-    color: #000;  /* Color negro */
-    text-transform: lowercase;  /* Texto en minúsculas como la imagen */
 }
 
 /* --- Teléfono (derecha) --- */
