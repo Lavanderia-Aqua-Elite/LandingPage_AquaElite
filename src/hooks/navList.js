@@ -1,14 +1,14 @@
 // Importa los modulos necesarios
 import React from 'react'; // ¡Importa React!
-import { FaMapMarkerAlt, FaUsers, FaTools, FaEnvelope } from 'react-icons/fa';
+import { FaHome, FaMapMarkerAlt, FaUsers, FaTools, FaEnvelope } from 'react-icons/fa';
 
 // Constante que crea un mapa que almacena los enlazes
 export const navList = [
   {
     id: 0,
-    list: 'Sobre Nosotros',
-    icon: React.createElement(FaUsers),
-    targetId: '#nosotros'
+    list: 'Inicio',
+    icon: React.createElement(FaHome),
+    targetId: '#inicio'
   },
   {
         id: 1,
@@ -18,12 +18,18 @@ export const navList = [
   },
   {
     id: 2,
+    list: 'Sobre Nosotros',
+    icon: React.createElement(FaUsers),
+    targetId: '#nosotros'
+  },
+  {
+    id: 3,
     list: 'Contactanos',
     icon: React.createElement(FaEnvelope),
     targetId: '#contactanos'
   },
   {
-    id: 3,
+    id: 4,
     list: 'Ubicanos',
     icon: React.createElement(FaMapMarkerAlt), // Sin JSX
     targetId: '#ubicacion'
