@@ -1,6 +1,6 @@
 // Importa modulos
 import { navList } from '../hooks/navList';
-import classes from '../styles/NavList.module.css'; // Asegúrate que esta ruta sea correcta
+import classes from '../styles/NavList.module.css'; 
 import useToggle from '../hooks/useToggle';
 import ToggleBtn from '../components/ToggleBtn';
 import useMobileDetect from '../hooks/useMobileDetect';
@@ -11,9 +11,14 @@ export default function NavList() {
     const [isExpanded, toggle] = useToggle(false);
     const isMobile = useMobileDetect();
 
+    const handleNavClick = () => {
+        if (isMobile) {
+            toggle(); // Cierra el menú en móviles
+        }
+    };
+
     return (
         <nav className={classes.nav}>
-            {/* Botón solo visible en móviles */}
             {isMobile && (
                 <ToggleBtn 
                     isExpanded={isExpanded} 
@@ -22,18 +27,18 @@ export default function NavList() {
                 />
             )}
 
-            {/* Lista de navegación */}
             <ul className={`
                 ${classes.navList} 
+                ${isMobile ? classes.mobileNav : ''}
                 ${isMobile && isExpanded ? classes.expanded : ''}
             `}>
                 {navList.map((item) => (
                     <li key={item.id} className={classes.navItem}>
-                        {item.isRoute ? (
+                        {item.type === 'route' ? (
                             <Link 
                                 to={item.targetId} 
                                 className={classes.navLink}
-                                onClick={() => isMobile && toggle()}
+                                onClick={handleNavClick}
                             >
                                 {item.icon}
                                 <span>{item.list}</span>
@@ -42,7 +47,7 @@ export default function NavList() {
                             <a 
                                 href={item.targetId} 
                                 className={classes.navLink}
-                                onClick={() => isMobile && toggle()}
+                                onClick={handleNavClick}
                             >
                                 {item.icon}
                                 <span>{item.list}</span>
