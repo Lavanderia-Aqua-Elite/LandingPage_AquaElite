@@ -1,19 +1,17 @@
-// Importa los módulos necesarios
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-// Importar páginas
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
+import Location from "../pages/Location";
 
-
-// Exporta por defecto y crea el componente para manejar las rutas
 export default function AppRoutes() {
     return (
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/contacto" element={<Contact />} />
-                <Route path="/ubicacion" element={<Location/>} />
+                <Route path="/ubicacion" element={<Location />} />
+                {/* Redirección para anchors */}
+                <Route path="/#:section" element={<Home />} />
             </Routes>
         </Router>
     );

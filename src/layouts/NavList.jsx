@@ -6,14 +6,25 @@ import ToggleBtn from '../components/ToggleBtn';
 import useMobileDetect from '../hooks/useMobileDetect';
 import { Link } from 'react-router-dom';
 
-// Exporta y crea por defecto el NavList
+// Exporta y crea el NavList
 export default function NavList() {
     const [isExpanded, toggle] = useToggle(false);
     const isMobile = useMobileDetect();
 
-    const handleNavClick = () => {
+    const handleNavClick = (item) => {
         if (isMobile) {
-            toggle(); // Cierra el menú en móviles
+            toggle();
+        }
+        // Para anchors, usa scrollToSection si estamos en la home
+        if (item.type === 'anchor' && window.location.pathname === '/') {
+            scrollToSection(item.targetId);
+        }
+    };
+
+    const scrollToSection = (id) => {
+        const element = document.querySelector(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
@@ -38,20 +49,23 @@ export default function NavList() {
                             <Link 
                                 to={item.targetId} 
                                 className={classes.navLink}
-                                onClick={handleNavClick}
+                                onClick={() => handleNavClick(item)}
                             >
                                 {item.icon}
                                 <span>{item.list}</span>
                             </Link>
                         ) : (
-                            <a 
-                                href={item.targetId} 
+                            <Link 
+                                to="/" 
                                 className={classes.navLink}
-                                onClick={handleNavClick}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    handleNavClick(item);
+                                }}
                             >
                                 {item.icon}
                                 <span>{item.list}</span>
-                            </a>
+                            </Link>
                         )}
                     </li>
                 ))}
