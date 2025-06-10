@@ -1,37 +1,48 @@
-// Importa los modulos necesarios
-import React from 'react'; // ¡Importa React!
-import { FaHome, FaMapMarkerAlt, FaUsers, FaTools, FaEnvelope } from 'react-icons/fa';
+// Importar modulos
+import React from 'react';
+import { 
+  FaHome, 
+  FaMapMarkerAlt, 
+  FaUsers, 
+  FaShoppingCart, 
+  FaEnvelope 
+} from 'react-icons/fa';
 
-// Constante que crea un mapa que almacena los enlazes
+// Exporta y crea el hook de navList
 export const navList = [
   {
     id: 0,
     list: 'Inicio',
     icon: React.createElement(FaHome),
-    targetId: '#inicio'
+    targetId: '#inicio',
+    type: 'anchor' // Navegación interna por anclas
   },
   {
-        id: 1,
-    list: 'Servicios',
-    icon: React.createElement(FaTools),
-    targetId: '#servicios'
+    id: 1,
+    list: 'Sobre Nosotros',
+    icon: React.createElement(FaUsers),
+    targetId: '#nosotros',
+    type: 'anchor'
   },
   {
     id: 2,
-    list: 'Sobre Nosotros',
-    icon: React.createElement(FaUsers),
-    targetId: '#nosotros'
+    list: 'Tienda',
+    icon: React.createElement(FaShoppingCart),
+    targetId: '/tienda',
+    type: 'route' // Ruta completa
   },
   {
     id: 3,
-    list: 'Contactanos',
+    list: 'Contáctanos',
     icon: React.createElement(FaEnvelope),
-    targetId: '#contactanos'
+    targetId: '/contacto',
+    type: 'route'
   },
   {
     id: 4,
-    list: 'Ubicanos',
-    icon: React.createElement(FaMapMarkerAlt), // Sin JSX
-    targetId: '#ubicacion'
+    list: 'Ubícanos',
+    icon: React.createElement(FaMapMarkerAlt),
+    targetId: '/ubicacion',
+    type: 'route'
   }
 ];
