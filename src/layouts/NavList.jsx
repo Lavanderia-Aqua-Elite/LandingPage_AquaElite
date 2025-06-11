@@ -1,31 +1,45 @@
-// Importa modulos
+// Importa los modulos
 import { navList } from '../hooks/navList';
 import classes from '../styles/NavList.module.css'; 
 import useToggle from '../hooks/useToggle';
 import ToggleBtn from '../components/ToggleBtn';
 import useMobileDetect from '../hooks/useMobileDetect';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
-// Exporta y crea el NavList
+// Exporta y crea por defecto el componente
 export default function NavList() {
+    // Estado para menú móvil
     const [isExpanded, toggle] = useToggle(false);
     const isMobile = useMobileDetect();
+    
+    // Hooks de navegación
+    const navigate = useNavigate();
+    const location = useLocation();
 
-    const handleNavClick = (item) => {
-        if (isMobile) {
-            toggle();
-        }
-        // Para anchors, usa scrollToSection si estamos en la home
-        if (item.type === 'anchor' && window.location.pathname === '/') {
-            scrollToSection(item.targetId);
-        }
-    };
+    /**
+     * Maneja el comportamiento de navegación inteligente:
+     * - Para tipo 'hybrid': scroll en Home o navega a Home + scroll
+     * - Para tipo 'route': navegación normal
+     * - Cierra el menú en móviles al seleccionar
+     */
+    const handleNavClick = (item, e) => {
+        if (isMobile) toggle();
 
-    const scrollToSection = (id) => {
-        const element = document.querySelector(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+        if (item.type === 'hybrid') {
+            if (location.pathname === '/') {
+                e.preventDefault();
+                const section = document.querySelector(item.targetId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                    // Actualiza la URL sin recargar
+                    window.history.pushState(null, '', item.targetId);
+                }
+            } else {
+                // Navega a Home y luego al anchor
+                navigate('/', { state: { scrollTo: item.targetId } });
+            }
         }
+        // Las rutas normales se manejan automáticamente con Link
     };
 
     return (
@@ -45,28 +59,15 @@ export default function NavList() {
             `}>
                 {navList.map((item) => (
                     <li key={item.id} className={classes.navItem}>
-                        {item.type === 'route' ? (
-                            <Link 
-                                to={item.targetId} 
-                                className={classes.navLink}
-                                onClick={() => handleNavClick(item)}
-                            >
-                                {item.icon}
-                                <span>{item.list}</span>
-                            </Link>
-                        ) : (
-                            <Link 
-                                to="/" 
-                                className={classes.navLink}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    handleNavClick(item);
-                                }}
-                            >
-                                {item.icon}
-                                <span>{item.list}</span>
-                            </Link>
-                        )}
+                        <Link
+                            to={item.type === 'hybrid' ? item.route : item.route}
+                            className={classes.navLink}
+                            onClick={(e) => handleNavClick(item, e)}
+                            state={item.type === 'hybrid' ? { scrollTo: item.targetId } : undefined}
+                        >
+                            {item.icon}
+                            <span>{item.list}</span>
+                        </Link>
                     </li>
                 ))}
             </ul>

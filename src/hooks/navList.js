@@ -15,34 +15,39 @@ export const navList = [
     list: 'Inicio',
     icon: React.createElement(FaHome),
     targetId: '#inicio',
-    type: 'anchor' // Navegación interna por anclas
+    route: '/',
+    type: 'hybrid' 
   },
   {
     id: 1,
     list: 'Sobre Nosotros',
     icon: React.createElement(FaUsers),
     targetId: '#nosotros',
-    type: 'anchor'
+    route: '/',
+    type: 'hybrid'
   },
   {
     id: 2,
     list: 'Tienda',
     icon: React.createElement(FaShoppingCart),
-    targetId: '/tienda',
+    targetId: '#tienda',
+    route: '/tienda',
     type: 'route' // Ruta completa
   },
   {
     id: 3,
     list: 'Contáctanos',
     icon: React.createElement(FaEnvelope),
-    targetId: '/contacto',
+    targetId: '#contacto',
+    route: '/contacto',
     type: 'route'
   },
   {
     id: 4,
     list: 'Ubícanos',
     icon: React.createElement(FaMapMarkerAlt),
-    targetId: '/ubicacion',
+    targetId: '#ubicacion',
+    route: '/ubicacion',
     type: 'route'
   }
 ];
