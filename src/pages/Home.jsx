@@ -7,6 +7,7 @@ import ImageMain from '../components/ImageMain';
 import image from '../hooks/image';
 import Phone from '../components/Phone';
 import MainTitle from '../components/MainTitle';
+import AboutUs from './AboutUs';
 
 // Exporta y crea por defecto el componente
 export default function Home() {
@@ -67,10 +68,8 @@ export default function Home() {
 
                     {/* Sección Nosotros - Ejemplo de cómo agregar más secciones */}
                     <section id="nosotros" className={classes.sectionAbout}>
-                        {/* Contenido de la sección nosotros */}
+                        <AboutUs />
                     </section>
-
-                    {/* Otras secciones con sus respectivos IDs */}
                 </main>
             </div>
         </>

@@ -1,0 +1,66 @@
+/* Importar modulo css global */
+@import url(../index.module.css);
+@import url(../index.module.css);
+
+.aboutSection {
+    background: var(--bg-aboutUs);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.contentContainer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.aboutContent {
+    margin-top: 1.5rem;
+}
+
+.aboutText {
+    color: var(--color-text);
+    font-family: var(--font-text);
+    font-size: var(--fontseize-text);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.highlights {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.highlightItem {
+    flex: 1;
+    min-width: 150px;
+    padding: 1rem;
+    background: var(--bg-cardService);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.highlightItem span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.highlightItem p {
+    margin: 0;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .highlights {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .highlightItem {
+        min-width: 100%;
+    }
+}
