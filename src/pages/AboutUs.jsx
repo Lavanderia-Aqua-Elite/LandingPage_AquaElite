@@ -1,6 +1,6 @@
 // Importa los modulos
 import SubTitle from "../components/SubTitle";
-import classes from "../styles/AboutUs.module.css"; // Asegúrate de crear este archivo CSS
+import classes from "../styles/AboutUs.module.css"; 
 
 // Crea y exporta por defecto el componente
 export default function AboutUs() {
