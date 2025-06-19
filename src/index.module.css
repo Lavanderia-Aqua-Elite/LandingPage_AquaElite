@@ -30,7 +30,12 @@
   --color-titlecard: #ffffff;
   --color-textcard: #dddddd;
   --color-minititle: #cccccc;
+
+  /* Colores de iconos */
   --color-icon: #333333;
+  --icon-ig-color: #E1306C;
+  --icon-whattsapp-color: #25D366;
+  --icon-movil-color: #34B7F1;
 
   /* Tipografias */
   --font-mainTitle: 'Arial Black', sans-serif;
@@ -62,6 +67,7 @@
   --fontsize-subtitle-responsive: 1.5rem;
   --fontsize-minititle-responsive: 1.2rem;
   --fontsieze-text-responsive: 1rem;
+  --fontsize-icon-responsive: 1.6rem;
 
 }
 
