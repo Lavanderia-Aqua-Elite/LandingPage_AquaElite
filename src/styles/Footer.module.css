@@ -1,0 +1,48 @@
+/* Footer.module.css */
+
+.contentfoot {
+    background: var(--bg-footer);
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.line_contentfoot {
+    border: none;
+    height: 1px;
+    background: var(--bg-lineAction);
+    margin: 0 auto;
+    width: 90%;
+}
+
+.mainfoot_contentfoot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    color: var(--color-text);
+    font-family: var(--font-text);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contentfoot {
+        padding: 1.5rem 0;
+    }
+    
+    .mainfoot_contentfoot {
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contentfoot {
+        padding: 1rem 0;
+    }
+    
+    .mainfoot_contentfoot {
+        gap: 1rem;
+    }
+}

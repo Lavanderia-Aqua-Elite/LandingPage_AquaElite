@@ -8,6 +8,7 @@ import image from '../hooks/image';
 import Phone from '../components/Phone';
 import MainTitle from '../components/MainTitle';
 import AboutUs from './AboutUs';
+import Footer from '../layouts/Footer';
 
 // Exporta y crea por defecto el componente
 export default function Home() {
@@ -71,6 +72,10 @@ export default function Home() {
                         <AboutUs />
                     </section>
                 </main>
+
+                {/* Footer */}
+                <Footer />
+
             </div>
         </>
     )
