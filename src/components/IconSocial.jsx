@@ -1,14 +1,14 @@
 // Importar modulos
 // components/IconSocial.jsx
-import iconSocial from '../hooks/iconSocial';
+import useIconSocial from '../hooks/useIconSocial';
 import classes from '../styles/IconSocial.module.css';
 
 // Crea y exporta el componente de IconSocial
 export default function IconSocial() {
-    const icons = iconSocial(classes);
+    const icons = useIconSocial(classes);
 
     return (
-        <div className={classes.container}>
+        <div className={classes.containerIcons}>
             {icons.map((item, idx) => (
                 <a
                     key={idx}

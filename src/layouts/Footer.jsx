@@ -16,7 +16,7 @@ export default function Footer() {
                     <MiniTitle 
                         minititle="Síguenos"
                     />
-                    
+                    <IconSocial />
                 </div>
 
                 {/* Sección de contacto */}
