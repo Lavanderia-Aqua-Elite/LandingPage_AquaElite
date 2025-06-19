@@ -17,7 +17,7 @@ export default function useIconSocial(classes) {
         },
         {
             icon: React.createElement(FaPhone, { className: `${classes.icon} ${classes.phone}` }),
-            url: "tel:+2299316363",
+            url: "tel:+2293445912",
             title: "Llamar por teléfono"
         }
     ];
