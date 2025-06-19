@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Colores individuales */
+.whatsapp {
+  color: #25D366;
+}
+
+.instagram {
+  color: #E1306C;
+}
+
+.phone {
+  color: #0A66C2;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+/* Responsive font-size */
+@media (max-width: 768px) {
+  .icon {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    font-size: 1.4rem;
+  }
+}
