@@ -1,6 +1,7 @@
 //Importa componentes
 import classes from '../styles/Footer.module.css';
-
+import Copyright from '../components/Copyright';
+import MiniTitle from '../components/MiniTitle';
 
 
 //Exporta por defecto y crea el componente footer
@@ -20,16 +21,24 @@ export default function Footer() {
                 
 
                 {/* Contiene la descripción de la lavanderia */}
+                <MiniTitle 
+                    minititle="Sobre Nosotros"
+                />
                 
 
                 {/* Contiene la sección de icon-redes */}
-                <h3 className={classes.mintitle_contentfoot}>Contáctanos</h3>
+                <MiniTitle 
+                    minititle="Contactanos"
+                />
                 
 
                 <hr className={classes.line_contentfoot}/>
 
                 {/* Contiene la sección de copyraigth */}
-                
+                <Copyright 
+                    company="Aqua Elite" 
+                    sinceYear={2025} 
+                />
 
             </footer>
 
