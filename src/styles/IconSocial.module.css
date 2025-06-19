@@ -1,0 +1,52 @@
+/* Importar modulo css global */
+@import url(../index.module.css);
+
+.socialContainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.socialLink {
+    transition: transform 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    font-size: var(--fontsize-icon);
+    color: var(--color-icon);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover */
+.socialLink:hover .icon {
+    transform: scale(1.15);
+}
+
+/* Responsive: íconos más pequeños en pantallas chicas */
+@media (max-width: 768px) {
+    .icon {
+        font-size: var(--fontsize-icon-responsive);
+    }
+
+    .socialContainer {
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        font-size: 1.6rem;
+    }
+
+    .socialContainer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

@@ -1,4 +1,5 @@
-/* Footer.module.css */
+/* Importar modulo css global */
+@import url(../index.module.css);
 
 .contentfoot {
     background: var(--bg-footer);

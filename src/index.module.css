@@ -30,6 +30,7 @@
   --color-titlecard: #ffffff;
   --color-textcard: #dddddd;
   --color-minititle: #cccccc;
+  --color-icon: #333333;
 
   /* Tipografias */
   --font-mainTitle: 'Arial Black', sans-serif;
@@ -51,6 +52,7 @@
   --fontsize-textcard: 1rem;
   --fontsize-minititle: 2rem;
   --fontseize-text: 1rem;
+  --fontsize-icon: 2.2rem;
 
   /* Tamaño de letra Responsivo */
   --fontsize-btnToggle-responsive: 1rem;
