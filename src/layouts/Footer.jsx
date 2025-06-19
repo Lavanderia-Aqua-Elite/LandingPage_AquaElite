@@ -2,8 +2,6 @@
 import classes from '../styles/Footer.module.css';
 import Copyright from '../components/Copyright';
 import MiniTitle from '../components/MiniTitle';
-import IconSocial from '../components/IconSocial';
-
 
 // Exporta por defecto y crea el componente footer
 export default function Footer() {
@@ -17,7 +15,7 @@ export default function Footer() {
                     <MiniTitle 
                         minititle="Síguenos"
                     />
-                    <IconSocial />
+                    
                 </div>
 
                 {/* Sección de contacto */}
