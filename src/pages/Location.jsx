@@ -1,9 +1,11 @@
+// Importa modulos
 import Header from "../layouts/Header";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from '../styles/Location.module.css';
 import { useLocation } from '../hooks/useLocation';
 
+// Crea el componente que crea el mapa
 export default function Location() {
     const { aquaElitePosition, defaultIcon, handleRouteClick } = useLocation();
 
@@ -21,11 +23,14 @@ export default function Location() {
                         {/* Mapa interactivo */}
                         <MapContainer 
                             center={aquaElitePosition} 
-                            zoom={18}  // Zoom más cercano para mejor detalle
+                            zoom={16}  // Zoom reducido para mejor contexto
                             className={styles.map}
-                            scrollWheelZoom={true}  // Permitir zoom con rueda del mouse
-                            dragging={true}  // Permitir arrastrar el mapa
-                            doubleClickZoom={true}  // Permitir zoom con doble click
+                            scrollWheelZoom={true}
+                            dragging={true}
+                            doubleClickZoom={true}
+                            minZoom={14}  // Límite mínimo de zoom
+                            maxZoom={18}  // Límite máximo de zoom
+                            style={{ height: '500px', width: '100%' }}  // Tamaño aumentado
                         >
                             <TileLayer
                                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
