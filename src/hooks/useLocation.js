@@ -5,8 +5,8 @@ import L from 'leaflet';
 // Exporta y crea el mapeado de la localización
 export const useLocation = () => {
     // Coordenadas exactas de AquaElite (19.109282, -96.1279454)
-    const aquaElitePosition = [19.206746403568992, -96.14036752500984];
-    const aquaEliteAddress = "Av.+Independencia+%23746+entre+Arista+y+Cerdan,+Boca+del+Río,+Veracruz";
+    const aquaElitePosition = [19.198428905650474, -96.13725934154299];
+    const aquaEliteAddress = "C.+Mariano+Arista+746,+Centro,+91700+Veracruz,+Ver.";
 
     // Icono memoizado para optimización
     const defaultIcon = useMemo(() => new L.Icon({
