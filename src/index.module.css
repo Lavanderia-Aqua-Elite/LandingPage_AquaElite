@@ -14,6 +14,10 @@
   --bg-sectionMovil: #111;
   --bg-movil: #333;
   --bg-cardService: #000000;
+  --bg-maptile: #071b2f;
+  --bg-mapcontent: #ffffff;
+  --bg-route: #27508f;
+  --bg-route_hover: #1a4a93;
 
   /* Colores */
   --color-maintitle: #ffffff;
@@ -30,6 +34,7 @@
   --color-titlecard: #ffffff;
   --color-textcard: #dddddd;
   --color-minititle: #ffffff;
+  --color-route: #ffffff;
 
   /* Colores de iconos */
   --color-icon: #333333;

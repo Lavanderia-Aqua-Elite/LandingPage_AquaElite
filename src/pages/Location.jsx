@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from '../styles/Location.module.css';
 import { useLocation } from '../hooks/useLocation';
+import Footer from '../layouts/Footer'
 
 // Crea el componente que crea el mapa
 export default function Location() {
@@ -65,6 +66,12 @@ export default function Location() {
                     </div>
                 </section>
             </main>
+
+            {/* Footer */}
+            <footer >
+                <Footer />
+            </footer>
+
         </div>
     );
 }
