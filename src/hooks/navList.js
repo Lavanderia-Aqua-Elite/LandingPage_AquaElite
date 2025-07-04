@@ -28,14 +28,6 @@ export const navList = [
   },
   {
     id: 2,
-    list: 'Tienda',
-    icon: React.createElement(FaShoppingCart),
-    targetId: '#tienda',
-    route: '/tienda',
-    type: 'route' // Ruta completa
-  },
-  {
-    id: 3,
     list: 'Contáctanos',
     icon: React.createElement(FaEnvelope),
     targetId: '#contacto',
@@ -43,7 +35,7 @@ export const navList = [
     type: 'route'
   },
   {
-    id: 4,
+    id: 3,
     list: 'Ubícanos',
     icon: React.createElement(FaMapMarkerAlt),
     targetId: '#ubicacion',
