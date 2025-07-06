@@ -28,14 +28,6 @@ export const navList = [
   },
   {
     id: 2,
-    list: 'Contáctanos',
-    icon: React.createElement(FaEnvelope),
-    targetId: '#contacto',
-    route: '/contacto',
-    type: 'route'
-  },
-  {
-    id: 3,
     list: 'Ubícanos',
     icon: React.createElement(FaMapMarkerAlt),
     targetId: '#ubicacion',

@@ -8,7 +8,6 @@ export default function AppRoutes() {
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/contacto" element={<Contact />} />
                 <Route path="/ubicacion" element={<Location />} />
                 {/* Redirección para anchors */}
                 <Route path="/#:section" element={<Home />} />
