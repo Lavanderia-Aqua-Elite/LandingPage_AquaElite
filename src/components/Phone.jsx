@@ -19,7 +19,9 @@ export default function Phone({ backgroundImage, children }) {
                 {children}
             </div>
             {/* Botón para instalar el apk */}
-            <BtnApk />
+            <div style={{ position: 'absolute', bottom: '10px', left: '50%', transform: 'translateX(-50%)', zIndex: 10 }}>
+                <BtnApk />
+            </div>
         </div>
     );
 }
