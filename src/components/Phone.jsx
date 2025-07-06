@@ -1,6 +1,7 @@
 // Importamos los modulos necesarios
 import usePhone from '../hooks/usePhone';
 import classes from '../styles/Phone.module.css';
+import BtnApk from './BtnApk';
 
 
 export default function Phone({ backgroundImage, children }) {
@@ -17,6 +18,8 @@ export default function Phone({ backgroundImage, children }) {
                 />
                 {children}
             </div>
+            {/* Botón para instalar el apk */}
+            <BtnApk />
         </div>
     );
 }
